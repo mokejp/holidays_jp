@@ -36,6 +36,6 @@ Usage:
     
     # get japanese holidays in 2015-2016.
     holidays = CountryHolidays.between('JP', 2015, 2016)
-
+    
     # get USA holidays in 2015
     holidays = CountryHolidays.get('US', 2015)
