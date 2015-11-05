@@ -2,7 +2,9 @@
 holidays-jp: Japanese holidays
 ******************************
 
-holidays-jp is a library for calculate the Japanese holidays since 1948.
+holidays-jp is a library for calculate holidays.
+Mainly it has been optimized to Japanese.
+
 It can be used in standalone and does not depend on Google calendar.
 
 Usage:
@@ -10,7 +12,7 @@ Usage:
 .. code-block:: python
     
     from holidays_jp import CountryHolidays
-    # get holidays in 2015.
+    # get japanese holidays in 2015.
     holidays = CountryHolidays.get('JP', 2015)
     # [
     #     (datetime.datetime(2015, 1, 1, 0, 0), '元日'),
@@ -32,5 +34,8 @@ Usage:
     #     (datetime.datetime(2015, 12, 23, 0, 0), '天皇誕生日')
     # ]
     
-    # get holidays in 2015-2016.
+    # get japanese holidays in 2015-2016.
     holidays = CountryHolidays.between('JP', 2015, 2016)
+
+    # get USA holidays in 2015
+    holidays = CountryHolidays.get('US', 2015)

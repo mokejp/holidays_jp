@@ -6,7 +6,7 @@ long_description = f.read()
 f.close()
 
 setup(
-    name='holidays_jp',
+    name='holidays-jp',
     version='1.0.0',
     description='Calculate the Japanese holidays since 1948.',
     long_description=long_description,
@@ -20,6 +20,7 @@ setup(
     zip_safe=True,
     keywords=[
         'holidays_jp',
+        'holidays-jp',
         'holiday',
         'japanese',
         'japan',
