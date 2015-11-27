@@ -2,7 +2,9 @@
 holidays-jp: Japanese holidays
 ******************************
 
-[![Build Status](https://drone.io/github.com/mokejp/holidays_jp/status.png)](https://drone.io/github.com/mokejp/holidays_jp/latest)
+.. image:: https://drone.io/github.com/mokejp/holidays_jp/status.png
+    :alt: Build Status
+    :target: https://drone.io/github.com/mokejp/holidays_jp/latest
 
 holidays-jp is a library for calculate holidays.
 Mainly it has been optimized to Japanese.
