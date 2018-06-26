@@ -7,7 +7,7 @@ f.close()
 
 setup(
     name='holidays-jp',
-    version='1.0.0',
+    version='1.0.1',
     description='Calculate the Japanese holidays since 1948.',
     long_description=long_description,
     author='mo.kejp',
