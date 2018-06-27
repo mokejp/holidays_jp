@@ -2,7 +2,8 @@
 holidays-jp: Japanese holidays
 ******************************
 
-[![Build Status](https://travis-ci.org/mokejp/holidays_jp.svg?branch=master)](https://travis-ci.org/mokejp/holidays_jp)
+.. image:: https://travis-ci.org/mokejp/holidays_jp.svg?branch=master
+    :target: https://travis-ci.org/mokejp/holidays_jp
 
 holidays-jp is a library for calculate holidays.
 Mainly it has been optimized to Japanese.
