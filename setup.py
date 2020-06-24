@@ -1,8 +1,9 @@
 from setuptools import setup, find_packages
 import os
 
-with open(os.path.join(os.path.dirname(__file__), 'README.rst'), encoding='utf-8') as f:
-    long_description = f.read()
+f = open(os.path.join(os.path.dirname(__file__), 'README.rst'))
+long_description = f.read()
+f.close()
 
 setup(
     name='holidays-jp',
