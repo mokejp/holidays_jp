@@ -106,7 +106,7 @@ class HolidayTest(unittest.TestCase):
     def testJP2021(self):
         from holidays_jp import CountryHolidays
         holidays = CountryHolidays.get('JP', 2021)
-        self.assertEqual(len(holidays), 15)
+        self.assertEqual(len(holidays), 16)
         self.assertHoliday(holidays[0], datetime.datetime(2021, 1, 1), '元日')
         self.assertHoliday(holidays[1], datetime.datetime(2021, 1, 11), '成人の日')
         self.assertHoliday(holidays[2], datetime.datetime(2021, 2, 11), '建国記念の日')
@@ -115,13 +115,14 @@ class HolidayTest(unittest.TestCase):
         self.assertHoliday(holidays[5], datetime.datetime(2021, 5, 3), '憲法記念日')
         self.assertHoliday(holidays[6], datetime.datetime(2021, 5, 4), 'みどりの日')
         self.assertHoliday(holidays[7], datetime.datetime(2021, 5, 5), 'こどもの日')
-        self.assertHoliday(holidays[8], datetime.datetime(2021, 7, 19), '海の日')
-        self.assertHoliday(holidays[9], datetime.datetime(2021, 8, 11), '山の日')
-        self.assertHoliday(holidays[10], datetime.datetime(2021, 9, 20), '敬老の日')
-        self.assertHoliday(holidays[11], datetime.datetime(2021, 9, 23), '秋分の日')
-        self.assertHoliday(holidays[12], datetime.datetime(2021, 10, 11), 'スポーツの日')
-        self.assertHoliday(holidays[13], datetime.datetime(2021, 11, 3), '文化の日')
-        self.assertHoliday(holidays[14], datetime.datetime(2021, 11, 23), '勤労感謝の日')
+        self.assertHoliday(holidays[8], datetime.datetime(2021, 7, 22), '海の日')
+        self.assertHoliday(holidays[9], datetime.datetime(2021, 7, 23), 'スポーツの日')
+        self.assertHoliday(holidays[10], datetime.datetime(2021, 8, 8), '山の日')
+        self.assertHoliday(holidays[11], datetime.datetime(2021, 8, 9), '振替休日')
+        self.assertHoliday(holidays[12], datetime.datetime(2021, 9, 20), '敬老の日')
+        self.assertHoliday(holidays[13], datetime.datetime(2021, 9, 23), '秋分の日')
+        self.assertHoliday(holidays[14], datetime.datetime(2021, 11, 3), '文化の日')
+        self.assertHoliday(holidays[15], datetime.datetime(2021, 11, 23), '勤労感謝の日')
 
 
     def testJPBetween(self):
