@@ -127,7 +127,7 @@ class HolidayTest(unittest.TestCase):
     def testJP2022(self):
         from holidays_jp import CountryHolidays
         holidays = CountryHolidays.get('JP', 2022)
-        self.assertEqual(len(holidays), 16)
+        self.assertEqual(len(holidays), 15)
         self.assertHoliday(holidays[0], datetime.datetime(2022, 1, 1), '元日')
         self.assertHoliday(holidays[1], datetime.datetime(2022, 1, 10), '成人の日')
         self.assertHoliday(holidays[2], datetime.datetime(2022, 2, 11), '建国記念の日')
@@ -137,13 +137,34 @@ class HolidayTest(unittest.TestCase):
         self.assertHoliday(holidays[6], datetime.datetime(2022, 5, 4), 'みどりの日')
         self.assertHoliday(holidays[7], datetime.datetime(2022, 5, 5), 'こどもの日')
         self.assertHoliday(holidays[8], datetime.datetime(2022, 7, 18), '海の日')
-        self.assertHoliday(holidays[10], datetime.datetime(2022, 8, 11), '山の日')
-        self.assertHoliday(holidays[11], datetime.datetime(2022, 9, 19), '敬老の日')
-        self.assertHoliday(holidays[12], datetime.datetime(2022, 9, 23), '秋分の日')
-        self.assertHoliday(holidays[13], datetime.datetime(2022, 10, 10), 'スポーツの日')
-        self.assertHoliday(holidays[14], datetime.datetime(2022, 11, 3), '文化の日')
-        self.assertHoliday(holidays[15], datetime.datetime(2022, 11, 23), '勤労感謝の日')
+        self.assertHoliday(holidays[9], datetime.datetime(2022, 8, 11), '山の日')
+        self.assertHoliday(holidays[10], datetime.datetime(2022, 9, 19), '敬老の日')
+        self.assertHoliday(holidays[11], datetime.datetime(2022, 9, 23), '秋分の日')
+        self.assertHoliday(holidays[12], datetime.datetime(2022, 10, 10), 'スポーツの日')
+        self.assertHoliday(holidays[13], datetime.datetime(2022, 11, 3), '文化の日')
+        self.assertHoliday(holidays[14], datetime.datetime(2022, 11, 23), '勤労感謝の日')
 
+    def testJP2023(self):
+        from holidays_jp import CountryHolidays
+        holidays = CountryHolidays.get('JP', 2023)
+        self.assertEqual(len(holidays), 17)
+        self.assertHoliday(holidays[0], datetime.datetime(2023, 1, 1), '元日')
+        self.assertHoliday(holidays[1], datetime.datetime(2023, 1, 2), '振替休日')
+        self.assertHoliday(holidays[2], datetime.datetime(2023, 1, 9), '成人の日')
+        self.assertHoliday(holidays[3], datetime.datetime(2023, 2, 11), '建国記念の日')
+        self.assertHoliday(holidays[4], datetime.datetime(2023, 2, 23), '天皇誕生日')
+        self.assertHoliday(holidays[5], datetime.datetime(2023, 3, 21), '春分の日')
+        self.assertHoliday(holidays[6], datetime.datetime(2023, 4, 29), '昭和の日')
+        self.assertHoliday(holidays[7], datetime.datetime(2023, 5, 3), '憲法記念日')
+        self.assertHoliday(holidays[8], datetime.datetime(2023, 5, 4), 'みどりの日')
+        self.assertHoliday(holidays[9], datetime.datetime(2023, 5, 5), 'こどもの日')
+        self.assertHoliday(holidays[10], datetime.datetime(2023, 7, 17), '海の日')
+        self.assertHoliday(holidays[11], datetime.datetime(2023, 8, 11), '山の日')
+        self.assertHoliday(holidays[12], datetime.datetime(2023, 9, 18), '敬老の日')
+        self.assertHoliday(holidays[13], datetime.datetime(2023, 9, 23), '秋分の日')
+        self.assertHoliday(holidays[14], datetime.datetime(2023, 10, 9), 'スポーツの日')
+        self.assertHoliday(holidays[15], datetime.datetime(2023, 11, 3), '文化の日')
+        self.assertHoliday(holidays[16], datetime.datetime(2023, 11, 23), '勤労感謝の日')
 
     def testJPBetween(self):
         from holidays_jp import CountryHolidays
